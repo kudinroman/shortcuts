@@ -1,0 +1,119 @@
+Navigation
+•  %: Jump to the matching parenthesis, bracket, or brace (:h matchpairs)
+•  M: Move to middle of screen
+•  ^: Jump to the first non-blank character of the line
+•  Ctrl + e: move screen down one line (without moving cursor)
+•  Ctrl + y: move screen up one line (without moving cursor)
+•  Ctrl + f: move forward one full screen
+•  Ctrl + b: move back one full screen
+•  Ctrl + d: move forward 1/2 a screen
+•  Ctrl + u: move back 1/2 a screen
+
+Editing Text
+•  a: Enter Insert mode after the cursor
+•  I: Enter Insert mode at the beginning of the line
+•  A: Enter Insert mode at the end of the line
+•  o: Insert a new line below the current line
+•  O: Insert a new line above the current line
+•  ciw: Change inside word (delete the word under the cursor and enter Insert mode)
+•  cw: Change (replace) to the nd of the word
+•  caw: Change around word (delete the word under the cursor including surrounding spaces and enter Insert mode)
+•  cit: Change inside tag (useful for HTML/XML editing)
+•  cib: Change inside block (delete the content inside parentheses or braces and enter Insert mode)
+•  gU: Convert selected text to uppercase
+•  gu: Convert selected text to lowercase
+•  J: Join line below to the current one with one space in between
+•  gJ: Join line below to the current one without space in between
+•  cc or S: change (replace) entire line
+•  c$ or C: change (replace) to the end of the line
+•  s: delete character and substitute text
+•  xp: transpose two letters (delte and paste)
+•  yw: yank (copy) the characters of the word from the cursor position to the start of the next word
+•  yiw: yank (copy) word under the cursor
+•  yaw: yank (copy) word under the cursor and the space after or before it
+•  y$ or Y: yank (copy) to the end of line
+•  dw: delete (cut) the characters of the word from the cursor position to the start ot the next word
+•  diw: delete (cut) word under the cursor
+•  daw: delete (cut) word under the cursor and the space after ro before it
+•  g/{pattern}/d: delete lines starting from 3 to 5
+•  g!/{pattern}/d: delete all lines not containing pattern
+•  d$ or D: delete (cut) to the end of the line
+•  x: delete (cut) character
+•  >>: indent (move right) line one shiftwidth
+•  <<: de-indent (move left) line one shiftwidth
+•  >%: indent a block with () or {} (cursor on brace)
+•  <%: de-indent a block with () or {} (cursor on brace)
+•  >ib: indent inner block with ()
+•  >at: indent inner block with <>
+•  3==: re-indent 3 lines
+•  =%: re-indent a block with () or {} (cursor on brace)
+•  =iB: re-indent inner block with {}
+•  dt: delete till
+
+
+Visual mode
+•  v: start visual mode
+•  V: start linewise visual mode
+•  Ctlr+V: start visual block mode
+•  o: Move to other end of marked area
+•  O: Move to other corner of block
+•  aw: mark a word
+•  ab: mark a block with ()
+•  aB: mark a block with {}
+•  at: mark a block with <> tags
+•  ib: inner block with ()
+•  iB: inner block with {}
+•  it: inner block with <> tags
+•  ~: switch case
+
+
+File Management
+•  :e filename: Open a file for editing
+
+Search and Replace
+•  /: Search forward for a pattern
+•  ?: Search backward for a pattern
+•  :%s/pattern/replacement/g: Replace all occurrences of 'pattern' with 'replacement' in the entire file
+•  :s/pattern/replacement/gc: Replace all occurrences of 'pattern' with 'replacement' in the current line with confirmation
+•  :bufdo %s/pattern/replacement/g: Replace 'pattern' with 'replacement' in all open buffers
+•  :g/pattern/d: Delete all lines containing 'pattern'
+
+Splits and Tabs
+•  :sp: Split the window horizontally
+•  :vsp: Split the window vertically
+•  :tabnew: Create a new tab
+•  :tabclose: Close the current tab
+•  :tabn: Go to the next tab
+•  :tabp: Go to the preious tab
+•  Ctrl + w s: Split the window horizontally
+•  Ctrl + w v: Split the window vertically
+•  Ctrl + w q: Close the current window
+
+Fold
+•  zd: delete fold under th cursor
+•  zf: manualy define a fold up to motion
+•  za: toggle fold under the cursor
+•  zo: open fold under the cursor
+•  zc: close fold under the cursor
+•  zr: reduce (open) all folds by one level
+•  zm: fold more (close) all folds by one level
+•  zi: toggle folding functionality
+
+NvimTree
+•  g?: help
+•  Ctrl + ]: make current dir as root
+
+
+======= NOT NESSECCARY ========
+
+Macros and Registers
+•  qa: Start recording a macro in register 'a'
+•  q: Stop recording the macro
+•  @a: Execute the macro stored in register 'a'
+•  "ayw: Yank (copy) the word under the cursor into register 'a'
+•  "ap: Paste the content of register 'a'
+
+Buffers and Windows
+•  :bnext or :bn: Go to the next buffer
+•  :bprev or :bp: Go to the previous buffer
+•  :bd: Delete the current buffer
