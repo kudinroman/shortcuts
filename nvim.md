@@ -125,7 +125,7 @@
 | g?       | Help                     |
 | Ctrl + ] | Make current dir as root |
 
-# ======= NOT NESSECCARY ========
+# NOT NESSECCARY
 
 ## Macros and Registers
 
