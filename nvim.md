@@ -1,3 +1,5 @@
+# NVIM
+
 ## Navigation
 
 | Shortcut | Explanation                                                         |
@@ -56,6 +58,14 @@
 | =iB            | Re-indent inner block with {}                                                                            |
 | dt             | Delete till                                                                                              |
 
+## File Management
+
+| Shortcut    | Explanation             |
+| ----------- | ----------------------- |
+| :e filename | Open a file for editing |
+
+<br/>
+
 ## Visual mode
 
 | Shortcut | Explanation                      |
@@ -73,12 +83,6 @@
 | iB       | Inner block with {}              |
 | it       | Inner block with <> tags         |
 | ~        | Switch case                      |
-
-## File Management
-
-| Shortcut    | Explanation             |
-| ----------- | ----------------------- |
-| :e filename | Open a file for editing |
 
 ## Search and Replace
 
@@ -124,6 +128,8 @@
 | -------- | ------------------------ |
 | g?       | Help                     |
 | Ctrl + ] | Make current dir as root |
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 # NOT NESSECCARY
 
